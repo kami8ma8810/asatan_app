@@ -1,0 +1,17 @@
+@use '../global' as *;
+
+.u-bold {
+  font-weight: 700 !important;
+}
+
+.u-underline {
+  background: linear-gradient(transparent 70%, #f0ed44 0%) !important;
+  display: inline !important;
+}
+
+.u-pc {
+  display: none;
+  @include mq(lg) {
+    display: block;
+  }
+}

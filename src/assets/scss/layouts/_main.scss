@@ -1,0 +1,157 @@
+@use '../global' as *;
+.main {
+  margin: 30px 10px;
+  padding: 20px 10px 40px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 4px 4px -4px hsl(200 50% 20% / 40%);
+  @include mq(lg) {
+    margin: 40px 20px;
+    padding: 40px;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fff;
+    border-radius: 8px;
+    opacity: 0.8;
+  }
+  &__section + .main__section {
+    margin-top: 40px;
+    @include mq(lg) {
+      margin-top: 80px;
+    }
+  }
+}
+.about {
+  &__title {
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 700;
+    @include mq(lg) {
+      font-size: 28px;
+    }
+  }
+  &__desc {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-ideograph;
+    text-justify: inter-character;
+    @include mq(lg) {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+  }
+  &__img {
+    margin-top: 40px;
+    @include mq(lg) {
+      margin-top: 60px;
+    }
+  }
+}
+.sample {
+  @include mq(lg) {
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__title {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.3em 0;
+    font-size: 16px;
+    line-height: 1.5;
+    @include mq(lg) {
+      font-size: 20px;
+    }
+  }
+}
+.food {
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mq(lg) {
+      margin-top: 80px;
+      font-size: 24px;
+      &::before,
+      &::after {
+        border-top: 1px solid;
+        content: '';
+        width: 5em;
+      }
+      &::before {
+        margin-right: 1em;
+      }
+      &::after {
+        margin-left: 1em;
+      }
+    }
+  }
+  &__desc {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    @include mq(lg) {
+      font-size: 20px;
+    }
+  }
+  &__inner {
+    margin-top: 20px;
+    @include mq(lg) {
+      margin-top: 40px;
+    }
+  }
+}
+.form {
+  label {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    &.is-clicked {
+      outline: 4px solid rgb(235, 52, 52);
+      outline-offset: -4px;
+    }
+    cursor: pointer;
+  }
+}
+
+.main__link {
+  margin-top: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  @include mq(lg) {
+    font-size: 16px;
+  }
+  a {
+    display: block;
+    @include mq(lg) {
+      display: inline-block;
+      transition: opacity 0.2s ease-out;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  img {
+    vertical-align: middle;
+    margin-left: 0.5em;
+  }
+}

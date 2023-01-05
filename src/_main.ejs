@@ -1,0 +1,21 @@
+<% const page='home'; %>
+<main class="main">
+  <section class="about main__section">
+    <h1 class="about__title u-underline">朝たんアプリは食べ物のたんぱく質を計算するアプリです。</h1>
+    <p class="about__desc">「朝たん」とは、「朝ごはんたんぱく質」のこと。</p>
+    <p class="about__desc">プロテイン飲料などでたんぱく質を摂取してもなかなか筋肉量が増えないのは、朝ごはんのたんぱく質が足りていないせいかも。</p>
+    <p class="about__desc">体がたんぱく質を必要としているタイミングである朝に、たんぱく質をしっかりとってアミノ酸を補給することで、<br class="u-pc">筋肉の分解を抑えることができると考えられています。</p>
+    <p class="main__link">参考文献：<a href="https://www9.nhk.or.jp/gatten/articles/20211117/index.html" target="blank" rel="noopener noreferrer">筋肉増強☆魔法の言葉　今こそ“朝たん”だっ！！！！！SP<img src="./assets/images/external.svg" alt="" width="11" height="10"></a></p>
+    <figure class="about__img sample">
+      <figcaption class="sample__title">カードの見方</figcaption>
+      <picture class="sample__img">
+        <source srcset="./assets/images/webp/item00.webp" type="image/webp" width="500" height="520">
+        <img src="./assets/images/item00.jpg" alt="" width="500" height="520">
+      </picture>
+    </figure>
+  </section>
+
+  <%- include('./_card.ejs'); %>
+
+  <p class="main__link">参考文献：<a href="https://www9.nhk.or.jp/gatten/articles/20211117/index.html" target="blank" rel="noopener noreferrer">筋肉増強☆魔法の言葉　今こそ“朝たん”だっ！！！！！SP<img src="./assets/images/external.svg" alt="" width="11" height="10"></a></p>
+</main>

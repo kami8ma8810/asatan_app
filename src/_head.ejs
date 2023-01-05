@@ -1,0 +1,32 @@
+<head prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb# article:http://ogp.me/ns/article#">
+  <meta charset="UTF-8" />
+  <title><%= meta.title %></title>
+  <meta name="description" content="<%= meta.description %>" />
+  <meta name="keywords" content="<%= meta.keywords %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta name="robots" content="index,follow" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta property="og:title" content="<%= meta.title %>" />
+  <meta property="og:description" content="<%= meta.description %>" />
+  <!-- URL関係はすべて絶対パスで記述 -->
+  <meta property="og:url" content="<%= meta.pageUrl %>" />
+  <meta property="og:image" content="<%= meta.pageUrl %>assets/images/ogp.jpg" />
+  <% if(meta.isHome) { %>
+  <meta property="og:type" content="website" />
+  <% } else {%>
+  <meta property="og:type" content="article" />
+  <% } %>
+  <meta property="og:site_name" content="<%= meta.title %>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="<%= meta.pageUrl %>assets/images/ogp.jpg" />
+  <meta name="twitter:title" content="<%= meta.title %>" />
+  <meta name="twitter:description" content="<%= meta.description %>" />
+  <meta name="thumbnail" content="<%= meta.pageUrl %>assets/images/ogp.jpg" />
+  <!-- favicon -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css" media="print" onload="this.media='all'" />
+</head>

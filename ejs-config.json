@@ -1,0 +1,13 @@
+{
+  "pageMeta": {
+    "home": {
+      "title": "朝たん計算アプリ",
+      "description": "「朝たん」とは「朝ごはんたんぱく質」のこと。体がたんぱく質を必要としているタイミングである朝に、たんぱく質をしっかりとってアミノ酸を補給することで、筋肉の分解を抑えることができると考えられています。",
+      "pageUrl": "https://kami8ma8810.github.io/public/asatan/",
+      "stylePath": "./assets/css/",
+      "scriptPath": "./assets/js/",
+      "imgPath": "./assets/images/",
+      "linkPath": "./"
+    }
+  }
+}
